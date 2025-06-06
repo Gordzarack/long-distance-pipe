@@ -1,0 +1,11 @@
+{
+  "name": "long-distance-pipe",
+  "version": "0.1.0",
+  "title": "Long Distance Pipe",
+  "author": "GordsZarack",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0"
+  ],
+  "description": "Adds a pipe with a massive extension range for transportation, can only connect with pumps, pumpjacks, miners and flamethrower turrets."
+}
