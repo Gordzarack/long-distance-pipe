@@ -18,7 +18,115 @@ ldPipeToGround.fluid_box.pipe_connections = {
           connection_category = "ld-pipe",
         },
 }
+ldPipeToGround.fluid_box.pipe_covers = {
+    north = {
+    layers = {
+      {
+        filename = "__long-distance-pipe__/assets/long-distance-pipe-covers/pipe-cover-north.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+      },
+      {
+        filename = "__base__/graphics/entity/pipe-covers/pipe-cover-north-shadow.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+        draw_as_shadow = true,
+      },
+    },
+  },
+  east = {
+    layers = {
+      {
+        filename = "__long-distance-pipe__/assets/long-distance-pipe-covers/pipe-cover-east.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+      },
+      {
+        filename = "__base__/graphics/entity/pipe-covers/pipe-cover-east-shadow.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+        draw_as_shadow = true,
+      },
+    },
+  },
+  south = {
+    layers = {
+      {
+        filename = "__long-distance-pipe__/assets/long-distance-pipe-covers/pipe-cover-south.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+      },
+      {
+        filename = "__base__/graphics/entity/pipe-covers/pipe-cover-south-shadow.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+        draw_as_shadow = true,
+      },
+    },
+  },
+  west = {
+    layers = {
+      {
+        filename = "__long-distance-pipe__/assets/long-distance-pipe-covers/pipe-cover-west.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+      },
+      {
+        filename = "__base__/graphics/entity/pipe-covers/pipe-cover-west-shadow.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        scale = 0.5,
+        draw_as_shadow = true,
+      },
+    },
+  },
+}
 ldPipeToGround.fluid_box.max_pipeline_extent = 320000
+ldPipeToGround.pictures = {
+  north = {
+    filename = "__long-distance-pipe__/assets/long-distance-pipe-to-ground/pipe-to-ground-up.png",
+    priority = "extra-high",
+    width = 128,
+    height = 128,
+    scale = 0.5,
+  },
+  south = {
+    filename = "__long-distance-pipe__/assets/long-distance-pipe-to-ground/pipe-to-ground-down.png",
+    priority = "extra-high",
+    width = 128,
+    height = 128,
+    scale = 0.5,
+  },
+  west = {
+    filename = "__long-distance-pipe__/assets/long-distance-pipe-to-ground/pipe-to-ground-left.png",
+    priority = "extra-high",
+    width = 128,
+    height = 128,
+    scale = 0.5,
+  },
+  east = {
+    filename = "__long-distance-pipe__/assets/long-distance-pipe-to-ground/pipe-to-ground-right.png",
+    priority = "extra-high",
+    width = 128,
+    height = 128,
+    scale = 0.5,
+  },
+}
 
 data:extend({
   {
@@ -34,36 +142,11 @@ data:extend({
   {
     type = "item",
     name = "ld-pipe-to-ground",
-    icon = ldPipeToGround.icon,
+    icon = "__long-distance-pipe__/assets/icons/pipe-to-ground.png",
     subgroup = "energy-pipe-distribution",
     order = "a[pipe]-ba[ld-pipe-to-ground]",
     place_result = "ld-pipe-to-ground",
     stack_size = 50,
   },
   ldPipeToGround
-  -- {
-  --   type = "pipe-to-ground",
-  --   name = "ld-pipe-to-ground",
-  --   icon = pipeToGround.icon,
-  --   flags = { "placeable-neutral", "player-creation" },
-  --   minable = { mining_time = 0.1, result = "ld-pipe-to-ground" },
-  --   fast_replaceable_group = "pipe",
-  --   collision_box = { { -0.29, -0.29 }, { 0.29, 0.2 } },
-  --   selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-  --   pictures = pipeToGround.pictures,
-  --   fluid_box = {
-  --     volume = 100,
-  --     max_pipeline_extent = 320000,
-  --     pipe_covers = pipecoverspictures(),
-  --     pipe_connections = {
-  --     },
-  --     hide_connection_info = true,
-  --   },
-  --   max_health = 150,
-  --   corpse = "pipe-remnants",
-  --   icon_draw_specification = { scale = 0.5 },
-  --   resistances = pipeToGround.resistances,
-  --   working_sound = sounds.pipe,
-  --   visualization = pipeToGround.visualization,
-  -- },
 })
