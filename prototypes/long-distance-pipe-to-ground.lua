@@ -127,7 +127,6 @@ ldPipeToGround.pictures = {
     scale = 0.5,
   },
 }
-
 data:extend({
   {
     type = "recipe",
@@ -147,6 +146,7 @@ data:extend({
     order = "a[pipe]-ba[ld-pipe-to-ground]",
     place_result = "ld-pipe-to-ground",
     stack_size = 50,
+    weight = 20000,
   },
   ldPipeToGround
 })

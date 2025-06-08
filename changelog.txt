@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 06/08/2025
+  Balancing:
+    - Updated rocket stack size to match regular underground pipes
+  Localization:
+    - Added localization for German, French, Japanese and Russian
